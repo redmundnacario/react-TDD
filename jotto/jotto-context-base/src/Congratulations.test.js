@@ -1,6 +1,6 @@
 import {shallow, mount} from 'enzyme';
 // import the component
-import Congratulations from './components/congratulations/congratulations.component';
+import Congratulations from './components/congratulations/Congratulations.component';
 // test utils
 import { checkProps, findDataTestAttr } from '../test/test.utils';
 
