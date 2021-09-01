@@ -11,7 +11,7 @@ const Congratulations = (props) => {
     } else {
         return (
             <div data-test="congratulations">
-                <h2 data-test="congrats-message"></h2>
+                <h2 data-test="congrats-message">Try to guess the word.</h2>
             </div>
         )
     }
