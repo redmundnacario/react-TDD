@@ -1,8 +1,8 @@
 import { shallow } from 'enzyme'
 
-import GuessedWords from './components/guessedWords/GuessedWords.component'
+import GuessedWords from '../components/guessedWords/GuessedWords.component'
 
-import { findDataTestAttr, checkProps } from '../test/test.utils' 
+import { findDataTestAttr, checkProps } from '../../test_utils/test.utils' 
 
 const defaultProps = {
     guessedWords: [

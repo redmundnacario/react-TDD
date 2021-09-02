@@ -4,14 +4,14 @@ import PropTypes from 'prop-types'
 const Congratulations = (props) => {
     if (props.success){
         return (
-            <div data-test="congratulations">
-                <h2 data-test="congrats-message">Congratulations!</h2>
+            <div data-test="congratulations" className="alert alert-success">
+                <span data-test="congrats-message">Congratulations!</span>
             </div>
         )
     } else {
         return (
-            <div data-test="congratulations">
-                <h2 data-test="congrats-message">Try to guess the word.</h2>
+            <div data-test="congratulations" className="alert alert-info">
+                <span data-test="congrats-message">Try to guess the word.</span>
             </div>
         )
     }

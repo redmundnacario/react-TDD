@@ -1,8 +1,8 @@
 import {shallow, mount} from 'enzyme';
 // import the component
-import Congratulations from './components/congratulations/Congratulations.component';
+import Congratulations from '../components/congratulations/Congratulations.component';
 // test utils
-import { checkProps, findDataTestAttr } from '../test/test.utils';
+import { checkProps, findDataTestAttr } from '../../test_utils/test.utils';
 
 const defaultProps = {
     success : true
@@ -31,7 +31,8 @@ test('renders Congratulations when success is True', () => {
 test('renders Congratulations when success is False', () => {
     const props = {success: false}
     const congrats = findDataTestAttr(setup(props), 'congrats-message')
-    expect(congrats.text()).toBe('')
+    // console.log(congrats.text())
+    expect(congrats.text()).toBe('Try to guess the word.')
 })
 
 test("does not throw warning with expected props", () => {

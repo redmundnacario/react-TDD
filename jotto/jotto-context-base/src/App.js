@@ -17,7 +17,7 @@ function App() {
     ]
   }
   return (
-    <div className="App">
+    <div className="App container">
       <h1>Jotto Game</h1>
       <Congratulations {...success} />
       <GuessedWords {...guesswords} />
