@@ -5,7 +5,7 @@ import Input from "./components/input/input.component.jsx"
 
 
 function App() {
-
+  // const { success, secretWord, guessedWords } = props
   // const success = {
   //   success : false
   // }
